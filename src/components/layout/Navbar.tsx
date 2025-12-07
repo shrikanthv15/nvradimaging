@@ -44,11 +44,11 @@ const Navbar = () => {
                             ))}
                         </div>
                         <a
-                            href="tel:212-746-6000"
+                            href="tel:000-000-0000"
                             className="flex items-center px-4 py-2 border border-primary text-primary rounded-full hover:bg-primary hover:text-white transition-all duration-300 group"
                         >
                             <Phone className="h-4 w-4 mr-2 group-hover:rotate-12 transition-transform" />
-                            <span className="font-semibold">212-746-6000</span>
+                            <span className="font-semibold">000-000-0000</span>
                         </a>
                     </div>
 
@@ -90,11 +90,11 @@ const Navbar = () => {
                                 </Link>
                             ))}
                             <a
-                                href="tel:212-746-6000"
+                                href="tel:000-000-0000"
                                 className="flex items-center w-full px-3 py-2 text-base font-medium text-primary hover:bg-primary/10 rounded-md"
                             >
                                 <Phone className="h-4 w-4 mr-2" />
-                                Call 212-746-6000
+                                Call 000-000-0000
                             </a>
                         </div>
                     </motion.div>
