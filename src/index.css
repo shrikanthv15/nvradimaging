@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0a0a0a;
+  --color-surface: #171717;
+
+  --color-primary: #06b6d4;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #6366f1;
+  --color-secondary-foreground: #ffffff;
+
+  --color-accent: #22d3ee;
+  --color-accent-foreground: #000000;
+
+  --color-muted: #262626;
+  --color-muted-foreground: #a3a3a3;
+
+  --animate-fade-in: fadeIn 0.5s ease-out;
+  --animate-slide-up: slideUp 0.5s ease-out;
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+/* Custom utilities if needed */
+@utility text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+}
+
+/* Base styles */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+}
+
+html {
+  @apply bg-background text-white antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-slate-100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold tracking-tight;
+}
