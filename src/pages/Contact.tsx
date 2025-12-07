@@ -39,7 +39,7 @@ const Contact = () => {
                                 <div className="ml-6">
                                     <h3 className="text-lg font-semibold text-white">Call Us</h3>
                                     <p className="text-gray-400 mt-2">
-                                        <a href="tel:212-746-6000" className="hover:text-primary transition-colors">212-746-6000</a>
+                                        <a href="tel:212-746-6000" className="hover:text-primary transition-colors">000-000-0000</a>
                                     </p>
                                     <p className="text-sm text-gray-500 mt-1">Mon-Fri, 9am - 5pm EST</p>
                                 </div>
