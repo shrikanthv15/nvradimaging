@@ -50,7 +50,6 @@ const Footer = () => {
 
                 <div className="border-t border-white/5 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
                     <p>&copy; {new Date().getFullYear()} NV Rad Imaging. All rights reserved.</p>
-                    <p className="mt-2 md:mt-0">Not associated with Weill Cornell Medicine (Demo)</p>
                 </div>
             </div>
         </footer>
