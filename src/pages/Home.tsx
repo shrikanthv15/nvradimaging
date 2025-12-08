@@ -22,45 +22,52 @@ const Home = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">
-                            Early Detection.<br />
-                            <span className="text-primary">Greater Peace of Mind.</span>
+                            Subspecialty Whole-Body<br />
+                            <span className="text-primary">Clinical Services.</span>
                         </h1>
-                        <p className="mt-4 text-xl text-gray-400 max-w-2xl mx-auto mb-10">
-                            Experience the future of preventative healthcare with Whole Body MRI.
-                            Radiation-free, comprehensive scanning in under 45 minutes.
+                        <p className="mt-4 text-xl text-gray-400 max-w-3xl mx-auto mb-10">
+                            The Clinical Assurance Engine for Proactive Health. <br />
+                            High-quality, subspecialty-trained interpretation of Whole-Body Screening MRI.
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                             <Link to="/contact" className="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-primary/90 transition-all flex items-center group">
-                                Schedule Your Scan
+                                Schedule Consultation
                                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                             </Link>
                             <Link to="/services" className="px-8 py-4 border border-white/10 bg-white/5 text-white rounded-full font-semibold hover:bg-white/10 transition-all backdrop-blur-sm">
-                                Learn How It Works
+                                Explore Services
                             </Link>
                         </div>
                     </motion.div>
                 </div>
             </section>
 
-            {/* Quick Features */}
+            {/* The Founders' Edge / Value Prop */}
             <section className="py-24 bg-surface/50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">The Founders' Edge</h2>
+                        <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+                            Led by Harvard and Johns Hopkins trained radiologists, we offer an unmatched fusion of subspecialty coverage.
+                        </p>
+                    </div>
+
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {[
                             {
                                 icon: ShieldCheck,
-                                title: "Radiation Free",
-                                desc: "Safe for regular screening. No ionizing radiation used during the scan."
-                            },
-                            {
-                                icon: Clock,
-                                title: "Fast & Comprehensive",
-                                desc: "Complete assessment from head to thighs in approximately 45 minutes."
+                                title: "Clinical Risk Mitigation",
+                                desc: "We responsibly manage incidental findings—the core weakness of the current market—using elite clinical rigor."
                             },
                             {
                                 icon: Activity,
-                                title: "Expert Analysis",
-                                desc: "Reviewed by Dr. Viswanadhan and subspecialty radiologists."
+                                title: "Subspecialty Expertise",
+                                desc: "Dual-subspecialty review (Neuro & Body) ensures diagnostic excellence across the two most critical body systems."
+                            },
+                            {
+                                icon: Clock,
+                                title: "Responsible Action",
+                                desc: "We transform screening results into actionable health strategies with personalized concierge consultations."
                             }
                         ].map((feature, idx) => (
                             <motion.div

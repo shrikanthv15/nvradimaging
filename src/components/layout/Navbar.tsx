@@ -10,7 +10,7 @@ const Navbar = () => {
 
     const navLinks = [
         { name: 'Services', path: '/services' },
-        { name: 'About Dr. Viswanadhan', path: '/about' },
+        { name: 'Our Team', path: '/about' },
         { name: 'Contact', path: '/contact' },
     ];
 
