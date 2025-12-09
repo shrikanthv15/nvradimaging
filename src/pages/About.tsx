@@ -25,15 +25,15 @@ const About = () => {
                     <div className="bg-surface rounded-3xl overflow-hidden border border-white/5 shadow-2xl">
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-0">
                             {/* Image Placeholder */}
-                            <div className="md:col-span-5 bg-gradient-to-br from-slate-800 to-slate-900 min-h-[400px] relative group flex items-center justify-center">
-                                <div className="w-56 h-56 rounded-full bg-slate-700/50 flex items-center justify-center border-4 border-slate-600/50 shadow-2xl relative z-10">
+                            <div className="md:col-span-5 bg-gradient-to-br from-slate-800 to-slate-900 min-h-[400px] relative group flex flex-col items-center justify-center p-8 md:p-0">
+                                <div className="w-56 h-56 rounded-full bg-slate-700/50 flex items-center justify-center border-4 border-slate-600/50 shadow-2xl relative z-10 mb-6 md:mb-0">
                                     <span className="text-5xl font-bold text-slate-500">NV</span>
                                 </div>
 
                                 {/* Decorational circle behind */}
                                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(6,182,212,0.1),transparent_70%)]" />
 
-                                <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 to-transparent text-center md:text-left">
+                                <div className="relative md:absolute md:bottom-0 left-0 right-0 p-0 md:p-8 text-center md:text-left">
                                     <h2 className="text-2xl font-bold text-white">Dr. Narayan Viswanadhan</h2>
                                     <p className="text-primary font-medium">Founder & CEO, MD</p>
                                 </div>
@@ -77,8 +77,8 @@ const About = () => {
                     <div className="bg-surface rounded-3xl overflow-hidden border border-white/5 shadow-2xl">
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-0">
                             {/* Image */}
-                            <div className="md:col-span-5 bg-gradient-to-br from-indigo-900 to-slate-900 min-h-[400px] relative group md:order-last flex items-center justify-center">
-                                <div className="w-56 h-56 rounded-full overflow-hidden border-4 border-indigo-500/30 shadow-2xl relative z-10">
+                            <div className="md:col-span-5 bg-gradient-to-br from-indigo-900 to-slate-900 min-h-[400px] relative group md:order-last flex flex-col items-center justify-center p-8 md:p-0">
+                                <div className="w-56 h-56 rounded-full overflow-hidden border-4 border-indigo-500/30 shadow-2xl relative z-10 mb-6 md:mb-0">
                                     <img
                                         src={somwaruImg}
                                         alt="Dr. Alexander Somwaru"
@@ -89,7 +89,7 @@ const About = () => {
                                 {/* Decorational circle behind */}
                                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.2),transparent_70%)]" />
 
-                                <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 to-transparent text-center md:text-left">
+                                <div className="relative md:absolute md:bottom-0 left-0 right-0 p-0 md:p-8 text-center md:text-left">
                                     <h2 className="text-2xl font-bold text-white">Dr. Alexander Somwaru</h2>
                                     <p className="text-secondary font-medium">Co-Founder & Clinical Director</p>
                                     <p className="text-gray-300 text-sm mt-1">Deputy Chief of Radiology, Tampa VA</p>
