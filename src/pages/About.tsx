@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Award, GraduationCap, Building } from 'lucide-react';
+import { Award, GraduationCap, Building, Cpu } from 'lucide-react';
+import somwaruImg from '../assets/somwaru.jpg';
 
 const About = () => {
     return (
@@ -24,13 +25,15 @@ const About = () => {
                     <div className="bg-surface rounded-3xl overflow-hidden border border-white/5 shadow-2xl">
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-0">
                             {/* Image Placeholder */}
-                            <div className="md:col-span-5 bg-gradient-to-br from-slate-800 to-slate-900 min-h-[400px] relative group">
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <div className="w-48 h-48 rounded-full bg-slate-700/50 flex items-center justify-center border-4 border-slate-600">
-                                        <span className="text-4xl font-bold text-slate-500">NV</span>
-                                    </div>
+                            <div className="md:col-span-5 bg-gradient-to-br from-slate-800 to-slate-900 min-h-[400px] relative group flex items-center justify-center">
+                                <div className="w-56 h-56 rounded-full bg-slate-700/50 flex items-center justify-center border-4 border-slate-600/50 shadow-2xl relative z-10">
+                                    <span className="text-5xl font-bold text-slate-500">NV</span>
                                 </div>
-                                <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 to-transparent">
+
+                                {/* Decorational circle behind */}
+                                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(6,182,212,0.1),transparent_70%)]" />
+
+                                <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 to-transparent text-center md:text-left">
                                     <h2 className="text-2xl font-bold text-white">Dr. Narayan Viswanadhan</h2>
                                     <p className="text-primary font-medium">Founder & CEO, MD</p>
                                 </div>
@@ -73,44 +76,67 @@ const About = () => {
                     {/* Dr. Somwaru */}
                     <div className="bg-surface rounded-3xl overflow-hidden border border-white/5 shadow-2xl">
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-0">
-                            {/* Content Order Swap on Desktop for visual interest, or keep consistent? Let's keep consistent for now but maybe mirror later if requested. Keeping consistent for clarity. */}
-                            <div className="md:col-span-5 bg-gradient-to-br from-indigo-900 to-slate-900 min-h-[400px] relative group md:order-last">
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <div className="w-48 h-48 rounded-full bg-indigo-800/50 flex items-center justify-center border-4 border-indigo-700">
-                                        <span className="text-4xl font-bold text-slate-400">AS</span>
-                                    </div>
+                            {/* Image */}
+                            <div className="md:col-span-5 bg-gradient-to-br from-indigo-900 to-slate-900 min-h-[400px] relative group md:order-last flex items-center justify-center">
+                                <div className="w-56 h-56 rounded-full overflow-hidden border-4 border-indigo-500/30 shadow-2xl relative z-10">
+                                    <img
+                                        src={somwaruImg}
+                                        alt="Dr. Alexander Somwaru"
+                                        className="w-full h-full object-cover"
+                                    />
                                 </div>
-                                <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 to-transparent">
+
+                                {/* Decorational circle behind */}
+                                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.2),transparent_70%)]" />
+
+                                <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 to-transparent text-center md:text-left">
                                     <h2 className="text-2xl font-bold text-white">Dr. Alexander Somwaru</h2>
-                                    <p className="text-secondary font-medium">Clinical Director, Body Imaging & Co-Founder</p>
+                                    <p className="text-secondary font-medium">Co-Founder & Clinical Director</p>
+                                    <p className="text-gray-300 text-sm mt-1">Deputy Chief of Radiology, Tampa VA</p>
                                 </div>
                             </div>
 
                             {/* Content */}
                             <div className="md:col-span-7 p-8 md:p-12">
                                 <div className="space-y-8">
+
+                                    {/* Titles */}
                                     <div>
-                                        <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-                                            <GraduationCap className="h-6 w-6 text-secondary mr-3" />
-                                            Clinical Distinction & Training
+                                        <h3 className="text-xl font-bold text-white mb-2 flex items-center">
+                                            <Building className="h-6 w-6 text-secondary mr-3" />
+                                            Academic & Clinical Leadership
                                         </h3>
                                         <p className="text-gray-400 leading-relaxed">
-                                            Dr. Somwaru is a Board-Certified Radiologist specializing in Body Imaging. He completed his advanced fellowship training at
-                                            <span className="text-white font-semibold"> Johns Hopkins Hospital</span>.
-                                            His expertise is crucial for the accurate interpretation of the abdomen, pelvis, and torso, distinguishing between common benign findings and early-stage disease.
+                                            Dr. Somwaru is an <span className="text-white font-semibold">Associate Professor at USF Morsani College of Medicine</span> and
+                                            <span className="text-white font-semibold"> Deputy Chief of Radiology at the James A. Haley VA</span>.
+                                            A graduate of UPenn and Johns Hopkins (Fellowship), he previously served as faculty at Georgetown (Teacher of the Year) and Mount Sinai.
                                         </p>
                                     </div>
 
+                                    {/* Expertise */}
                                     <div>
-                                        <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-                                            <Building className="h-6 w-6 text-accent mr-3" />
-                                            The Clinical Imperative
+                                        <h3 className="text-xl font-bold text-white mb-2 flex items-center">
+                                            <GraduationCap className="h-6 w-6 text-accent mr-3" />
+                                            Subspecialty Expertise
                                         </h3>
                                         <p className="text-gray-400 leading-relaxed">
-                                            Dr. Somwaru co-founded NV Rad Imaging to pair direct-to-consumer imaging with academic-level clinical oversight.
-                                            He personally oversees the quality assurance of the Body components, ensuring diagnostic excellence from the brain down to the pelvis.
+                                            Board-certified and fellowship-trained in Body Imaging, he is an expert in MRI/CT, specifically <span className="text-white">multi-parametric prostate MRI</span> and ultrasound fusion biopsies.
+                                            He has published over 15 peer-reviewed papers and 30 exhibits.
                                         </p>
                                     </div>
+
+                                    {/* Innovation/AI */}
+                                    <div>
+                                        <h3 className="text-xl font-bold text-white mb-2 flex items-center">
+                                            <Cpu className="h-6 w-6 text-primary mr-3" />
+                                            Innovation & Technology
+                                        </h3>
+                                        <p className="text-gray-400 leading-relaxed">
+                                            A pioneer in clinical tech, Dr. Somwaru has translated AI tools (Clear Read, Rapid AI) into practice and advocates for
+                                            <span className="text-white"> Augmented/Virtual Reality</span> to enhance patient care and surgical planning.
+                                        </p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
