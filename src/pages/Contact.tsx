@@ -27,7 +27,7 @@ const Contact = () => {
                                 <div className="ml-6">
                                     <h3 className="text-lg font-semibold text-white">Visit Us</h3>
                                     <p className="text-gray-400 mt-2">
-                                        1305 York Ave<br />New York, NY 10021
+                                        New York <br />New York, NY
                                     </p>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@ const Contact = () => {
                                 <div className="ml-6">
                                     <h3 className="text-lg font-semibold text-white">Call Us</h3>
                                     <p className="text-gray-400 mt-2">
-                                        <a href="tel:000-000-0000" className="hover:text-primary transition-colors">000-000-0000</a>
+                                        <a href="tel:+12017047674" className="hover:text-primary transition-colors">+1 (201) 704-7674</a>
                                     </p>
                                     <p className="text-sm text-gray-500 mt-1">Mon-Fri, 9am - 5pm EST</p>
                                 </div>
@@ -51,7 +51,7 @@ const Contact = () => {
                                 </div>
                                 <div className="ml-6">
                                     <h3 className="text-lg font-semibold text-white">Email Us</h3>
-                                    <p className="text-gray-400 mt-2">info@nvrad.com</p>
+                                    <p className="text-gray-400 mt-2">nvradimagingllc@gmail.com</p>
                                 </div>
                             </div>
                         </div>

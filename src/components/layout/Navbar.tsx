@@ -10,7 +10,9 @@ const Navbar = () => {
 
     const navLinks = [
         { name: 'Services', path: '/services' },
+        { name: 'Medicine 3.0', path: '/longevity' },
         { name: 'Our Team', path: '/about' },
+        { name: 'FAQ', path: '/faq' },
         { name: 'Contact', path: '/contact' },
     ];
 
@@ -44,11 +46,11 @@ const Navbar = () => {
                             ))}
                         </div>
                         <a
-                            href="tel:000-000-0000"
+                            href="tel:+1 (201) 704-7674"
                             className="flex items-center px-4 py-2 border border-primary text-primary rounded-full hover:bg-primary hover:text-white transition-all duration-300 group"
                         >
                             <Phone className="h-4 w-4 mr-2 group-hover:rotate-12 transition-transform" />
-                            <span className="font-semibold">000-000-0000</span>
+                            <span className="font-semibold">+1 (201) 704-7674</span>
                         </a>
                     </div>
 

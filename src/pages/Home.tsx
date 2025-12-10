@@ -42,8 +42,9 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* The Founders' Edge / Value Prop */}
-            <section className="py-24 bg-surface/50">
+
+            {/* The Founders' Edge / Value Prop - (Restored) */}
+            <section className="py-24 bg-background">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">The Founders' Edge</h2>
@@ -76,7 +77,7 @@ const Home = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: idx * 0.2 }}
-                                className="p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-colors"
+                                className="p-8 rounded-2xl bg-surface border border-white/5 hover:border-primary/50 transition-colors"
                             >
                                 <feature.icon className="h-10 w-10 text-primary mb-4" />
                                 <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
@@ -84,6 +85,21 @@ const Home = () => {
                             </motion.div>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            {/* Final CTA */}
+            <section className="py-24 relative overflow-hidden">
+                <div className="absolute inset-0 bg-primary/10">
+                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(6,182,212,0.2),transparent_70%)]" />
+                </div>
+                <div className="relative max-w-4xl mx-auto px-4 text-center">
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Know Your Body. Own Your Future.</h2>
+                    <p className="text-xl text-gray-300 mb-10">The best time to start your longevity roadmap is today.</p>
+                    <Link to="/contact" className="inline-flex items-center px-10 py-5 bg-white text-background rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">
+                        Schedule Your Scan Now
+                        <ArrowRight className="ml-2 h-6 w-6" />
+                    </Link>
                 </div>
             </section>
         </div>

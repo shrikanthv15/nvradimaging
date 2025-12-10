@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Award, GraduationCap, Building, Cpu } from 'lucide-react';
 import somwaruImg from '../assets/somwaru.jpg';
+import viswanadhanImg from '../assets/viswanadhan.jpeg';
 
 const About = () => {
     return (
@@ -26,8 +27,12 @@ const About = () => {
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-0">
                             {/* Image Placeholder */}
                             <div className="md:col-span-5 bg-gradient-to-br from-slate-800 to-slate-900 min-h-[400px] relative group flex flex-col items-center justify-center p-8 md:p-0">
-                                <div className="w-56 h-56 rounded-full bg-slate-700/50 flex items-center justify-center border-4 border-slate-600/50 shadow-2xl relative z-10 mb-6 md:mb-0">
-                                    <span className="text-5xl font-bold text-slate-500">NV</span>
+                                <div className="w-56 h-56 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl relative z-10 mb-6 md:mb-0">
+                                    <img
+                                        src={viswanadhanImg}
+                                        alt="Dr. Narayan Viswanadhan"
+                                        className="w-full h-full object-scale-down"
+                                    />
                                 </div>
 
                                 {/* Decorational circle behind */}

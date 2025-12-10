@@ -23,15 +23,15 @@ const Footer = () => {
                         <ul className="space-y-3">
                             <li className="flex items-start text-gray-400">
                                 <MapPin className="h-5 w-5 mr-3 text-primary mt-0.5" />
-                                <span>1305 York Ave,<br />New York, NY 10021</span>
+                                <span><br />New York, NY</span>
                             </li>
                             <li className="flex items-center text-gray-400">
                                 <Phone className="h-5 w-5 mr-3 text-primary" />
-                                <a href="tel:000-000-0000" className="hover:text-primary transition-colors">000-000-0000</a>
+                                <a href="tel:+1 (201) 704-7674" className="hover:text-primary transition-colors">+1 (201) 704-7674</a>
                             </li>
                             <li className="flex items-center text-gray-400">
                                 <Mail className="h-5 w-5 mr-3 text-primary" />
-                                <a href="mailto:info@nvrad.com" className="hover:text-primary transition-colors">info@nvrad.com</a>
+                                <a href="mailto:nvradimagingllc@gmail.com" className="hover:text-primary transition-colors">nvradimagingllc@gmail.com</a>
                             </li>
                         </ul>
                     </div>
